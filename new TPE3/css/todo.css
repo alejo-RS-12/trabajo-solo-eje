@@ -1,0 +1,266 @@
+body{
+    background-color: #3d1a8a;
+    font-weight: 300;
+    margin: 0;
+}
+.btn-menu{
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.menu{
+    width: 100%;
+    display: flex; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.imglogo{
+    height: 80px;
+    margin-right: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    text-align: center;
+    background-color: orangered;
+    width: 100%;
+    height: 100%;
+}
+ul.navbar{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+ul.navbar.show{
+    display: flex;
+}
+ul.navbar li{
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+}
+ul.navbar li a{
+    display: flex;
+    justify-content: space-between 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+ul.navbar li :hover{
+    color: white;
+}
+.logo2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.container{
+    margin-bottom: 10px;
+    color: white;
+}
+ul.generos, li{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    padding-right: 10px;
+}
+h1, h2{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.cutl{
+    width: 30%;
+}
+.nier{
+    width: 30%;
+}
+.tlou{
+    width: 30%;
+}
+.hole{
+    width: 30%;
+}
+.elden{
+    width: 30%;
+}
+.info-proximo{
+    text-align: center;
+}
+.info-proximo p{
+    margin-top: 50px;
+}
+
+.footer{
+    font-style: oblique;
+    color: #501fbb;
+    font-size: medium;
+    text-align: center;
+}
+.tabla{
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 100%;
+    background-color: orangered;
+}
+
+.formTabla input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.form-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Tabla de personajes (normal) */
+.tabla tbody{
+    color: black;
+}
+
+table, th, td{
+    width: 50%;
+    border: 4px solid black;
+    border-collapse: collapse;
+    margin-top: 1%;
+}
+/* div de formulario */
+.contacto{
+    width: auto;
+    height: 100%;
+    background-color: orangered;
+    margin: auto;
+    margin-top: 3%;
+    padding: 30px 30px;
+    border: 4px solid rgb(0, 0, 0);
+    text-align: center;
+}
+.captcha {
+    background-image: url('/imagenes/difuminacionCaptcha.jpg') ; 
+    padding: 1%;
+}
+.captcha p {
+    color: rgb(192, 176, 176);
+    font-size: 40px;
+    user-select: none;
+}
+
+.tituloCaptcha{
+    margin: 0;
+}
+/* Tamaño y edicion de boton de enviar */
+.boton {
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 1px;
+    margin-bottom: 2px;
+    
+}
+
+#resaltado-naranja {
+    color: orange;
+}
+
+#resaltado-verde {
+    color: green;
+}
+p { 
+    margin: 1%;
+    text-align: center;
+    font-size: large;
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: #3d1a8a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16pt;
+        font-weight: 300;
+        word-spacing: 5px;
+        margin: 0;
+    }
+    .btn-menu{
+        display: none;
+    }
+    ul.navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    ul.navbar li{
+        list-style: none;
+        margin: 0px 0px;
+        padding: 15px 20px;
+    }
+    .cutl{
+        width: 20%;
+    }
+    .nier{
+        width: 20%;
+    }
+    .tlou{
+        width: 20%;
+    }
+    .hole{
+        width: 20%;
+    }
+    .elden{
+        width: 20%;
+    }
+    h1, h2{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .tabla{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3%;
+        background-color: orangered;
+    }
+    
+    .tabla tbody{
+        color: black;
+    }
+    
+    table, th, td{
+       text-align: center;
+        border: 4px solid black;
+        border-collapse:collapse;
+        padding: 10px;
+    }
+    .form-botones{
+        text-align: center;
+        padding: 10px;
+    }
+    p { 
+        margin: 1%;
+        text-align: center;
+        font-size: large;
+    }
+}

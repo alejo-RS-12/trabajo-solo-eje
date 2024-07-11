@@ -1,0 +1,47 @@
+
+    <div class="container">
+        <section>
+            <h1 id="Novedades">Novedades</h1>
+            <div class="logo-dos">
+                <img src="imagenes/novedades.png" class="logo2" alt="novedades de juegos">
+            </div>
+        </section>
+        <h2>juegos</h2>
+        <div class="tabla">
+            <form class="formTabla" id="form-insertar-tabla">
+                <div>
+                    <h3 id="msj"></h3>
+                </div>
+                <input type="text" placeholder="titulo" id="titulo" name="titulo">
+                <input type="number" placeholder="cantidad" id="cantidad" name="cantidad">
+                <input type="number" placeholder="precio" id="precio" name="precio">
+                <input type="text" name="buscador" placeholder="buscar producto">
+                <div class="form-botones">
+                    <button type="button" class="botones" id="btn-agregar">Agregar</button>
+                    <button type="button" class="botones" id="btn-agregar-tres">Agregar x3</button>
+                    <button id="btn-buscar">Buscar</button>
+                </div>
+            </form>
+            <table id="tablaDinamica">
+                <thead>
+                    <tr>
+                        <th id="titulo">titulo</th>
+                        <th id="cantidad">cantidad</th>
+                        <th class="th-precio" id="precio">precio</th>
+                        <th>Eliminar</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+
+                <tbody id="insertarTabla">
+                </tbody>
+
+            </table>
+
+            <p id="pageNum"></p>
+            <div class="form-botones">
+                <button type="button" class="botones" id="btn-anterior">anterior</button>
+                <button type="button" class="botones" id="btn-siguiente">siguiente</button>
+            </div>
+        </div>
+    </div>
